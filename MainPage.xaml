@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pakastin.MainPage"
+             BackgroundImageSource="Kuvat/pakastin.jpg">
+
+    <ContentPage.Resources>
+        <StyleSheet Source="/Tyylit/Tyyli.css" />
+    </ContentPage.Resources>
+    <ScrollView>
+        <Grid>
+            <Image
+                x:Name="backgroundImage"
+                Source="Kuvat/pakastin1.jpg"
+                Aspect="AspectFill" 
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand" />
+                <StackLayout>
+            
+            <Frame BackgroundColor="#9EB8D9" Padding="24" CornerRadius="0">
+                <Label Text="Tutki pakastinta!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" />
+            </Frame>
+            <Label Text="Kirjoita pakastimeen laittamasi tuote." StyleClass="teksti"  />
+
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="inputKentta" Placeholder="Kirjoita tähän pakastimeen laittamasi tuote..." StyleClass="kentta"/>
+                <Button x:Name="lisaaTuote" Text="Lisää" Clicked="lisaaTuote_Clicked" StyleClass="nappi" />
+            </StackLayout>
+            
+            <Label x:Name="outputLabel1" StyleClass="outputLabel1" TextColor="Red"/>
+            <Label x:Name="outputLabel" FontSize="18" Margin="20, 20, 0, 10"/>
+            <StackLayout x:Name="tuoteLista" />
+
+            <Button x:Name="delete" Text="Tyhjennä" Clicked="delete_Clicked" StyleClass="nappi2" />
+
+        </StackLayout>
+                </Grid>
+    </ScrollView>
+</ContentPage>

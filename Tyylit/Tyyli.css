@@ -1,0 +1,48 @@
+﻿.nappi {
+    padding: 10;
+    font-weight: bold;
+    background: #9EB8D9;
+    border-radius: 15;
+    font-size: 12;
+    width: 50;
+    margin: 0 0 0 10;
+}
+
+.nappi2 {
+    padding: 10;
+    font-weight: bold;
+    background: #9EB8D9;
+    border-radius: 15;
+    font-size: 12;
+    width: 100;
+    margin: 0 0 0 10;
+}
+
+.poistaNappi {
+    padding: 10;
+    font-weight: bold;
+    background: #9EB8D9;
+    border-radius: 15;
+    font-size: 12;
+    width: 50;
+    margin: 0 0 0 10;
+}
+
+
+.kentta {
+    width: 300;
+
+}
+
+.outputLabel1 {
+    font-size: 16;
+    TextColor: red;
+    Margin: 20 20 0 10;
+}
+
+
+
+.teksti {
+    margin: 10 0 20 20;
+    font-size: 20;
+}
